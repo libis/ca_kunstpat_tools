@@ -2515,30 +2515,6 @@
 				<metadataElement code="ToestandInfo_line3" datatype="Container">
 					<labels>
 						<label locale="nl_NL">
-							<name>Toestand - opmerking</name>
-						</label>
-					</labels>
-					<settings/>
-					<elements>
-						<metadataElement code="ToestandNote" datatype="Text">
-							<labels>
-								<label locale="nl_NL">
-									<name>Toestand - bijkomende informatie</name>
-									<description>condition.notes; preservation_form.notes</description>
-								</label>
-							</labels>
-							<settings>
-									<setting name="fieldWidth">100</setting>
-									<setting name="fieldHeight">2</setting>
-									<setting name="minChars">0</setting>
-									<setting name="maxChars">65535</setting>
-							</settings>
-						</metadataElement>
-					</elements>
-				</metadataElement>
-				<metadataElement code="ToestandInfo_line4" datatype="Container">
-					<labels>
-						<label locale="nl_NL">
 							<name>Volledigheid</name>
 						</label>
 					</labels>
@@ -2567,6 +2543,30 @@
 								<setting name="fieldWidth">40</setting>
 								<setting name="fieldHeight">1</setting>
 								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="ToestandInfo_line4" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerking</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="ToestandNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking</name>
+									<description>condition.notes; preservation_form.notes; completeness.notes</description>
+								</label>
+							</labels>
+							<settings>
+									<setting name="fieldWidth">100</setting>
+									<setting name="fieldHeight">2</setting>
+									<setting name="minChars">0</setting>
+									<setting name="maxChars">65535</setting>
 							</settings>
 						</metadataElement>
 					</elements>
