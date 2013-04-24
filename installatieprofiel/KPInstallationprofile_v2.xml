@@ -428,7 +428,15 @@
 					</label>
 				</labels>
 				<items>
-					<item idno="verworvenvan" enabled="1" default="1">
+					<item idno="blank" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>-</name_singular>
+								<name_plural>-</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="verworvenvan" enabled="1" default="0">
 						<labels>
 							<label locale="nl_NL" preferred="1">
 								<name_singular>Verworven van</name_singular>
@@ -930,7 +938,7 @@
 			</labels>
 			<settings/>
 			<elements>
-				<metadataElement code="AantalObjecten_line1" datatype="Container">
+				<metadataElement code="AantalObjectenInfo_line1" datatype="Container">
 					<labels>
 						<label locale="nl_NL">
 							<name>Aantal objecten</name>
@@ -1127,6 +1135,7 @@
 								<setting name="fieldHeight">1</setting>
 								<setting name="minChars">0</setting>
 								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 						<metadataElement code="Vervaardigerrol" datatype="List" list="Vervaardigerrol_lijst">
@@ -1224,6 +1233,7 @@
 								<setting name="fieldHeight">1</setting>
 								<setting name="minChars">0</setting>
 								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 						<metadataElement code="VervaardigingDatumNote" datatype="Text">
@@ -1470,6 +1480,7 @@
 							<settings>
 								<setting name="fieldWidth">40</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 						<metadataElement code="StandplaatsGeschDatTot" datatype="DateRange">
@@ -1482,6 +1493,7 @@
 							<settings>
 								<setting name="fieldWidth">40</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -1498,7 +1510,7 @@
 							<labels>
 								<label locale="nl_NL">
 									<name>Standplaats</name>
-									<description>location</description>
+									<description>location; location.default</description>
 								</label>
 							</labels>
 							<settings>
@@ -1506,6 +1518,7 @@
 								<setting name="fieldHeight">1</setting>
 								<setting name="minChars">0</setting>
 								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -1550,7 +1563,7 @@
 			<labels>
 				<label locale="nl_NL">
 					<name>Eigendomsgeschiedenis</name>
-					<description>owner_hist.acquired_from; owner_hist.owner</description>
+					<description>owner_hist.acquired_from; owner_hist.owner; current_owner</description>
 				</label>
 			</labels>
 			<settings>
@@ -1624,6 +1637,7 @@
 							<settings>
 								<setting name="fieldWidth">20</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -1646,7 +1660,9 @@
 							<settings>
 								<setting name="fieldWidth">90</setting>
 								<setting name="fieldHeight">1</setting>
-								
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -1726,6 +1742,7 @@
 							<settings>
 								<setting name="fieldWidth">20</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 						<metadataElement code="VerwervingPlaats" datatype="Place">
@@ -1753,7 +1770,7 @@
 						<metadataElement code="VerworvenVanKies" datatype="List" list="Verworvenvan_lijst">
 							<labels>
 								<label locale="nl_NL">
-									<name>Keuzelijst</name>
+									<name>Verworven van/door/op</name>
 									<description>nieuw veld</description>
 								</label>
 							</labels>
@@ -1791,7 +1808,7 @@
 							<labels>
 								<label locale="nl_NL">
 									<name>Opmerkingen</name>
-									<description>acquisition.auction.lot_number; acquisition.conditions; acquisition.notes; acquisition.reason; field_coll.event; field_coll.notes; owner_hist.notes</description>
+									<description>acquisition.auction.lot_number; acquisition.notes; acquisition.reason; field_coll.event; field_coll.notes; owner_hist.notes</description>
 								</label>
 							</labels>
 							<settings>
@@ -1835,7 +1852,7 @@
 						<metadataElement code="VerwervingPrijsKeuze" datatype="List" list="Prijs_lijst">
 							<labels>
 								<label locale="nl_NL">
-									<name>Keuzelijst</name>
+									<name>Soort prijs</name>
 									<description>nieuw veld</description>
 								</label>
 							</labels>
@@ -1848,7 +1865,7 @@
 							<labels>
 								<label locale="nl_NL">
 									<name>Prijs</name>
-									<description>valuation.value; acquisition.price.value; acquisition.price.currency; acquisition.offer_price.value; acquisition.offer_price.currency</description>
+									<description>valuation.value; valuation.value.currency; acquisition.price.value; acquisition.price.currency; acquisition.offer_price.value; acquisition.offer_price.currency; insurance.value; insurance.value.currency</description>
 								</label>
 							</labels>
 							<settings>
@@ -1860,12 +1877,13 @@
 							<labels>
 								<label locale="nl_NL">
 									<name>Datum</name>
-									<description>insurance.date</description>
+									<description>insurance.date; insurance.expiry_date; valuation.date</description>
 								</label>
 							</labels>
 							<settings>
 								<setting name="fieldWidth">30</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -1882,7 +1900,7 @@
 							<labels>
 								<label locale="nl_NL">
 									<name>Opmerking</name>
-									<description>insurance.notes; price.acquisition.notes</description>
+									<description>insurance.notes; acquisition.price.notes; valuation.notes</description>
 								</label>
 							</labels>
 							<settings>
@@ -1945,6 +1963,7 @@
 							<settings>
 								<setting name="fieldWidth">40</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -1969,6 +1988,7 @@
 								<setting name="fieldHeight">1</setting>
 								<setting name="minChars">0</setting>
 								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -2101,7 +2121,7 @@
 						<metadataElement code="AfmetingKeuze" datatype="List" list="AfmetingKeuze_lijst">
 							<labels>
 								<label locale="nl_NL">
-									<name>Keuzelijst</name>
+									<name>Soort afmeting</name>
 									<description>dimension.type; dimension.precision; dimension.unit; dimension.value</description>
 								</label>
 							</labels>
@@ -2132,10 +2152,10 @@
 					</labels>
 					<settings/>
 					<elements>
-						<metadataElement code="AfmetingKeuze" datatype="List" list="AfmetingKeuze_lijst">
+						<metadataElement code="AfmetingKeuzeDub" datatype="List" list="AfmetingKeuze_lijst">
 							<labels>
 								<label locale="nl_NL">
-									<name>Keuzelijst</name>
+									<name>Soort afmeting</name>
 									<description>dimension.type; dimension.precision; dimension.unit; dimension.value</description>
 								</label>
 							</labels>
@@ -2144,7 +2164,7 @@
 								<setting name="fieldHeight">1</setting>
 							</settings>
 						</metadataElement>
-						<metadataElement code="AfmetingWaarde" datatype="Length">
+						<metadataElement code="AfmetingWaardeDub" datatype="Length">
 							<labels>
 								<label locale="nl_NL">
 									<name>Waarde</name>
@@ -2487,6 +2507,7 @@
 							<settings>
 								<setting name="fieldWidth">40</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -2545,6 +2566,7 @@
 							<settings>
 								<setting name="fieldWidth">40</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -2708,6 +2730,7 @@
 			<settings>
 				<setting name="fieldWidth">90</setting>
 				<setting name="fieldHeight">1</setting>
+				<setting name="suggestExistingValues">1</setting>
 			</settings>
 			<typeRestrictions>
 				<restriction code="r1">
@@ -2773,6 +2796,7 @@
 								<setting name="fieldHeight">1</setting>
 								<setting name="minChars">0</setting>
 								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -2912,6 +2936,7 @@
 							<settings>
 								<setting name="fieldWidth">40</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -3069,6 +3094,7 @@
 							<settings>
 								<setting name="fieldWidth">40</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -3160,6 +3186,7 @@
 							<settings>
 								<setting name="fieldWidth">40</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -3513,6 +3540,7 @@
 					<settings>
 						<setting name="fieldWidth">40</setting>
 						<setting name="fieldHeight">1</setting>
+						<setting name="suggestExistingValues">1</setting>
 					</settings>
 				</metadataElement>
 				<metadataElement code="LeenEindDatum" datatype="DateRange">
@@ -3525,6 +3553,7 @@
 					<settings>
 						<setting name="fieldWidth">40</setting>
 						<setting name="fieldHeight">1</setting>
+						<setting name="suggestExistingValues">1</setting>
 					</settings>				
 				</metadataElement>
 			</elements>
@@ -3605,6 +3634,7 @@
 					<settings>
 						<setting name="fieldWidth">40</setting>
 						<setting name="fieldHeight">1</setting>
+						<setting name="suggestExistingValues">1</setting>
 					</settings>
 				</metadataElement>
 				<metadataElement code="MovementEindDatum" datatype="DateRange">
@@ -3617,6 +3647,7 @@
 					<settings>
 						<setting name="fieldWidth">40</setting>
 						<setting name="fieldHeight">1</setting>
+						<setting name="suggestExistingValues">1</setting>
 					</settings>				
 				</metadataElement>
 			</elements>
@@ -3682,6 +3713,7 @@
 							<settings>
 								<setting name="fieldWidth">20</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 						<metadataElement code="TentEindDatum" datatype="DateRange">
@@ -3694,6 +3726,7 @@
 							<settings>
 								<setting name="fieldWidth">20</setting>
 								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>				
 						</metadataElement>
 						<metadataElement code="TentoonstellingPlaats" datatype="Place">
@@ -3734,6 +3767,7 @@
 								<setting name="fieldHeight">1</setting>
 								<setting name="minChars">0</setting>
 								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -3759,6 +3793,7 @@
 								<setting name="fieldHeight">1</setting>
 								<setting name="minChars">0</setting>
 								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
 							</settings>
 						</metadataElement>
 					</elements>
@@ -3776,19 +3811,87 @@
 				</restriction>
 			</typeRestrictions>
 		</metadataElement>
-		<!-- metadataElement code="DocReferentie" datatype="Text">
+		<metadataElement code="DocReferentieInfo" datatype="Container">
 			<labels>
 				<label locale="nl_NL">
-					<name>Referentie</name>
-					<description>documentation.free_text; documentation.author; documentation.title</description>
+					<name>Tijdschriftinformatie</name>
+					<description>Tijdschriftinformatie</description>
 				</label>
 			</labels>
-			<settings>
-					<setting name="fieldWidth">100</setting>
-					<setting name="fieldHeight">1</setting>
-					<setting name="minChars">0</setting>
-					<setting name="maxChars">65535</setting>
-			</settings>
+			<elements>
+				<metadataElement code="DocReferentieInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Titel van het tijdschrift</name>
+							<description>Titel van het tijdschrift</description>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="TijdschriftTitel" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Tijdschrifttitel</name>
+									<description>source.title; source.title.lead_word</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">90</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="DocReferentieInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Jaargang, aflevering, datum</name>
+							<description>Jaargang, aflevering, datum</description>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="TijdschriftJaargang" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Jaargang</name>
+									<description>source.volume</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="TijdschriftAflevering" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Aflevering</name>
+									<description>source.issue</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="TijdschriftDatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Datum</name>
+									<description>source.day; source.month; source.publication_years</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>		
 			<typeRestrictions>
 				<restriction code="r1">
 					<table>ca_occurrences</table>
@@ -3800,7 +3903,7 @@
 					</settings>
 				</restriction>
 			</typeRestrictions>
-		</metadataElement -->
+		</metadataElement>
 		<metadataElement code="collectieBeschrijving" datatype="Text">
 			<labels>
 				<label locale="nl_NL">
@@ -3835,6 +3938,7 @@
 			<settings>
 					<setting name="fieldWidth">50</setting>
 					<setting name="fieldHeight">1</setting>
+					<setting name="suggestExistingValues">1</setting>
 			</settings>
 			<typeRestrictions>
 				<restriction code="r1">
@@ -3873,6 +3977,7 @@
 				</restriction>
 			</typeRestrictions>
 		</metadataElement>
+		
 	</elementSets>
 	<userInterfaces>
 		<userInterface code="objects_ui" type="ca_objects">
@@ -3952,7 +4057,7 @@
 								<setting name="display_template" locale="0">^ca_entities.preferred_labels (^ca_entities.GeboorteDataInfo.Geboortedatum - ^ca_entities.SterfDataInfo.Sterfdatum)</setting>
 							</settings>
 						</placement>
-						<placement code="ca_attribute_Vervaardigerrol">
+						<placement code="ca_attribute_VervaardigerrolInfo">
 							<bundle>ca_attribute_VervaardigerrolInfo</bundle>
 						</placement>
 						<placement code="ca_attribute_VervaardigerDataInfo">
@@ -4029,9 +4134,6 @@
 						<placement code="ca_attribute_WaardeInfo">
 							<bundle>ca_attribute_WaardeInfo</bundle>
 						</placement>
-						<placement code="ca_attribute_VerzekeringInfo">
-							<bundle>ca_attribute_VerzekeringInfo</bundle>
-						</placement>
 						<placement code="ca_loans">
 							<bundle>ca_loans</bundle>
 							<settings>
@@ -4049,8 +4151,6 @@
 								<setting name="label" locale="nl_NL">Ontvanger</setting>
 								<setting name="add_label" locale="nl_NL">Voeg ontvanger toe</setting>
 								<setting name="restrict_to_relationship_types">OntvangerRelatie</setting>
-								<setting name="restrict_to_types">actindividual</setting>
-								<setting name="restrict_to_types">histindividual</setting>
 							</settings>
 						</placement>				
 					</bundlePlacements>
@@ -4107,11 +4207,14 @@
 						<placement code="ca_entities">
 							<bundle>ca_entities</bundle>
 							<settings>
-								<setting name="label" locale="nl_NL">Afgebeeld persoon</setting>
-								<setting name="add_label" locale="nl_NL">Voeg afgebeeld persoon toe</setting>
+								<setting name="label" locale="nl_NL">Afgebeeld of gerelateerd persoon/familie/instelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg afgebeeld of gerelateerd persoon/familie/instelling toe</setting>
 								<setting name="restrict_to_relationship_types">AfgebeeldPersRelatie</setting>
-								<setting name="restrict_to_types">histindividual</setting>
+								<setting name="restrict_to_relationship_types">GedragendoorRelatie</setting>
+								<setting name="restrict_to_relationship_types">GebruiktdoorRelatie</setting>
+								<!--setting name="restrict_to_types">histindividual</setting>
 								<setting name="restrict_to_types">actindividual</setting>
+								<setting name="restrict_to_types">family</setting-->
 							</settings>
 						</placement>
 						<placement code="ca_afgebeeldobject">
@@ -4775,14 +4878,14 @@
 						<placement code="preferred_labels">
 							<bundle>preferred_labels</bundle>
 							<settings>
-								<setting name="label" locale="nl_NL">Titel</setting>
+								<setting name="label" locale="nl_NL">Naam van de tentoonstelling</setting>
 								<setting name="height" locale="nl_NL">1</setting>
 							</settings>
 						</placement>
 						<placement code="nonpreferred_labels">
 							<bundle>nonpreferred_labels</bundle>
 							<settings>
-								<setting name="label" locale="nl_NL">Alternatieve titel</setting>
+								<setting name="label" locale="nl_NL">Alternatieve naam van de tentoonstelling</setting>
 								<setting name="height" locale="nl_NL">1</setting>
 							</settings>
 						</placement>
@@ -4827,6 +4930,8 @@
 							<settings>
 								<setting name="label" locale="nl_NL">Gerelateerde objecten</setting>
 								<setting name="add_label" locale="nl_NL">Voeg gerelateerde objecten</setting>
+								<setting name="restrict_to_relationship_types">related</setting>
+								<setting name="restrict_to_relationship_types">used</setting>
 							</settings>
 						</placement>
 						<placement code="ca_entities">
@@ -4882,6 +4987,9 @@
 								<setting name="label" locale="nl_NL">Documentatie</setting>
 								<setting name="height" locale="nl_NL">1</setting>
 							</settings>
+						</placement>
+						<placement code="ca_attribute_DocReferentieInfo">
+							<bundle>ca_attribute_DocReferentieInfo</bundle>
 						</placement>
 						<placement code="ca_attribute_GerelDocumentatieNote">
 							<bundle>ca_attribute_GerelDocumentatieNote</bundle>
@@ -5240,6 +5348,26 @@
 	<relationshipTypes>
 		<relationshipTable name="ca_objects_x_entities">
 			<types>
+				<type code="GebruiktdoorRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>gebruikt door</typename>
+							<typename_reverse>heeft gebruikt</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="GedragendoorRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>gedragen door</typename>
+							<typename_reverse>heeft gedragen</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
 				<type code="BewaarinstellingRelatie" default="0">
 					<labels>
 						<label locale="nl_NL">
