@@ -1,0 +1,5765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base" infoUrl="http://providence.collectiveaccess.org/wiki/DefaultProfile">
+	<profileName>KP profiel</profileName>
+	<profileDescription>Kunstpatrimonium</profileDescription>
+<locales>
+	<locale lang="nl" country="NL">Nederlands</locale>
+</locales>
+	<lists>
+		<list code="collection_sources" hierarchical="1" system="0" vocabulary="0">
+			<labels>
+				<label locale="nl_NL">
+					<name>Collection sources</name>
+				</label>
+			</labels>
+			<items>
+				<item idno="i1" enabled="1" default="1">
+					<labels>
+						<label locale="nl_NL" preferred="1">
+							<name_singular>Collection Sources</name_singular>
+							<name_plural>Collection Sources</name_plural>
+						</label>
+					</labels>
+				</item>
+			</items>
+		</list>
+		<list code="entity_sources" hierarchical="1" system="0" vocabulary="0">
+			<labels>
+				<label locale="nl_NL">
+					<name>Entity sources</name>
+				</label>
+			</labels>
+			<items>
+				<item idno="i1" enabled="1" default="1">
+					<labels>
+						<label locale="nl_NL" preferred="1">
+							<name_singular>Entity Sources</name_singular>
+							<name_plural>Entity Sources</name_plural>
+						</label>
+					</labels>
+				</item>
+			</items>
+		</list>
+		<list code="object_sources" hierarchical="1" system="0" vocabulary="0">
+			<labels>
+				<label locale="nl_NL">
+					<name>Object sources</name>
+				</label>
+			</labels>
+			<items>
+				<item idno="KPCollectie" enabled="1" default="1">
+					<labels>
+						<label locale="nl_NL" preferred="1">
+							<name_singular>KP Collectie</name_singular>
+							<name_plural>KP Collecties</name_plural>
+						</label>
+					</labels>
+				</item>
+			</items>
+		</list>
+		<list code="storage_location_types" hierarchical="0" system="0" vocabulary="0">
+			<labels>
+				<label locale="nl_NL">
+					<name>Storage location types</name>
+				</label>
+			</labels>
+			<items>
+				<item idno="KPDepot" enabled="1" default="1">
+					<labels>
+						<label locale="nl_NL" preferred="1">
+							<name_singular>KP depot</name_singular>
+							<name_plural>KP depots</name_plural>
+						</label>
+					</labels>
+				</item>
+				<item idno="externeBewaarplaats" enabled="1" default="0">
+					<labels>
+						<label locale="nl_NL" preferred="1">
+							<name_singular>Externe bewaarplaats</name_singular>
+							<name_plural>Externe bewaarplaatsen</name_plural>
+						</label>
+					</labels>
+				</item>
+			</items>
+		</list>
+			<list code="loan_types" hierarchical="0" system="1" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Loan label type values</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="binnenkomendeBruikleen" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Binnenkomende bruikleen</name_singular>
+								<name_plural>Binnenkomende bruikleen</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="uitgaandeBruikleen" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Uitgaande bruikleen</name_singular>
+								<name_plural>Uitgaande bruikleen</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<!-- het is mogelijk dat hier nog een type aan toegevoegd wordt: schilderij -->
+			<list code="object_types" hierarchical="0" system="1" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Object types</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="KPObject" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Object</name_singular>
+								<name_plural>Objecten</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="place_hierarchies" hierarchical="1" system="0" vocabulary="0">
+			<labels>
+				<label locale="nl_NL">
+					<name>Place hierarchies</name>
+				</label>
+			</labels>
+			<items>
+				<item idno="places" enabled="1" default="1">
+					<labels>
+						<label locale="nl_NL" preferred="1">
+							<name_singular>Place Authority</name_singular>
+							<name_plural>Place Authority</name_plural>
+						</label>
+					</labels>
+				</item>
+			</items>
+		</list>
+			<list code="collection_types" hierarchical="0" system="1" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Collection types</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="kunstpatrimonium" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Kunstpatrimonium</name_singular>
+								<name_plural>Kunstpatrimonium</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="object_acq_types" hierarchical="0" system="1" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Object acquisition types</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="blank" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>-</name_singular>
+								<name_plural>-</name_plural>
+							</label>
+						</labels>
+					</item>	
+					<item idno="aankoop" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Aankoop</name_singular>
+								<name_plural>Aankoop</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="aankoopUniverArchief" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Aankoop Universiteitsarchief</name_singular>
+								<name_plural>Aankoop Universiteitsarchief</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="bruikleen" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Bruikleen</name_singular>
+								<name_plural>Bruikleen</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="depot" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Depot</name_singular>
+								<name_plural>Depot</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="erfenis" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Erfenis</name_singular>
+								<name_plural>Erfenis</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="gift" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Gift</name_singular>
+								<name_plural>Gift</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="handgift" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Handgift</name_singular>
+								<name_plural>Handgift</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="opdracht" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Opdracht</name_singular>
+								<name_plural>Opdracht</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="schenking" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Schenking</name_singular>
+								<name_plural>Schenking</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="vondst" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Vondst</name_singular>
+								<name_plural>Vondst</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="entity_types" hierarchical="1" system="1" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Entity types</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="actindividual" enabled="1" default="1" rank="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Persoon</name_singular>
+								<name_plural>Personen</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="family" enabled="1" default="0" rank="3">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Familie</name_singular>
+								<name_plural>Families</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="organisation" enabled="1" default="0" rank="4">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Organisatie/Instelling</name_singular>
+								<name_plural>Organisatie/Instellingen</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>	
+			</list>
+			<list code="occurrence_types" hierarchical="0" system="1" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Occurrence types</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="exhibitions" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Tentoonstelling</name_singular>
+								<name_plural>Tentoonstellingen</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="documentation" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Documentatie</name_singular>
+								<name_plural>Documentatie</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="events" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Gebeurtenis</name_singular>
+								<name_plural>Gebeurtenissen</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="soortNummer_lijst" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Soort Nummer</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="nrschenkingslijst" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="0">
+								<name_singular>Nummer schenkingslijst</name_singular>
+								<name_plural>Nummers schenkingslijsten</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="oudinventarisnr" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Oud inventarisnummer</name_singular>
+								<name_plural>Oude inventarisnummers</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="volledigheid_lijst" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Volledigheid</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="volledig" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Volledig</name_singular>
+								<name_plural>Volledig</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="onvolledig" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Onvolledig</name_singular>
+								<name_plural>Onvolledig</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="toestandAlgemeen_lijst" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Toestand Algemeen</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="goed" enabled="1" default="1" rank="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Goed</name_singular>
+								<name_plural>Goed</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="redelijk" enabled="1" default="0"  rank="2">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Redelijk</name_singular>
+								<name_plural>Redelijk</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="matig" enabled="1" default="0"  rank="3">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Matig</name_singular>
+								<name_plural>Matig</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="slecht" enabled="1" default="0" rank="4">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Slecht</name_singular>
+								<name_plural>Slecht</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="Verworvenvan_lijst" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Verworven van</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="blank" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>-</name_singular>
+								<name_plural>-</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="verworvenvan" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Verworven van</name_singular>
+								<name_plural>Verworven van</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="verworvendoor" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Verworven door</name_singular>
+								<name_plural>Verworven door</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="verworvenop" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Verworven op</name_singular>
+								<name_plural>Verworven op</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>			
+			<list code="deelgeheel_lijst" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Deel/Geheel</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="geheel" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Geheel</name_singular>
+								<name_plural>Geheel</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="deel" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Deel</name_singular>
+								<name_plural>Deel</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>			
+			<list code="verwijderingsmethode_lijst" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Verwijdering methode</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="blank" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>-</name_singular>
+								<name_plural>-</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="ruil" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Ruil</name_singular>
+								<name_plural>Ruil</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="verkocht" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Verkocht</name_singular>
+								<name_plural>Verkocht</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="AantalOnderdelen_lijst" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Aantal Objecten</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="aantal" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Aantal</name_singular>
+								<name_plural>Aantal</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="onderdeel" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Onderdeel</name_singular>
+								<name_plural>Onderdelen</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="Collectiebeheer_lijst" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Beheer Collectie</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="eigenbeheer" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Collectie in eigen beheer</name_singular>
+								<name_plural>Collectie in eigen beheer</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="derden" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Collectie in beheer van derden</name_singular>
+								<name_plural>Collectie in beheer van derden</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="ObjectCategorie_lijst" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Object categorie</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="testobjectcategorie" enabled="1" default="1" rank="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Test objectcategorie</name_singular>
+								<name_plural>Test objectcategorie</name_plural>
+							</label>
+						</labels>
+					</item>
+				<!--Worden automatisch opgeladen? Zie thesaurus.tags; zoeken op term.type=objectcategorie-->	
+				</items>
+			</list>
+			<list code="ObjectNaam_lijst" hierarchical="0" system="0" vocabulary="1">
+				<labels>
+					<label locale="nl_NL">
+						<name>Objectnaam</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="testobjectnaam" enabled="1" default="1" rank="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Test objectnaam</name_singular>
+								<name_plural>Test objectnaam</name_plural>
+							</label>
+						</labels>
+					</item>
+				<!--Worden automatisch opgeladen? Move of AAT; Zie thesaurus.tags; zoeken op term.type=objectnaam-->	
+				</items>
+			</list>
+			<list code="Vervaardigerrol_lijst" hierarchical="0" system="0" vocabulary="1">
+				<labels>
+					<label locale="nl_NL">
+						<name>Rol van de vervaardiger</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="testrol" enabled="1" default="1" rank="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Test rol</name_singular>
+								<name_plural>Test rol</name_plural>
+							</label>
+						</labels>
+					</item>
+				<!--Worden automatisch opgeladen?; Zie thesaurus.tags; zoeken op term.type=rol; moet ook [BLANK] toegevoegd worden-->	
+				</items>
+			</list>
+			<list code="workflow_statuses" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Object workflow statuses</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="editing_in_progress" enabled="1" default="0" value="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Aan te vullen</name_singular>
+								<name_plural>Aan te vullen</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="review_in_progress" enabled="1" default="1" value="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Na te nakijken</name_singular>
+								<name_plural>Na te nakijken</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="completed" enabled="1" default="0" value="2">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Voltooid</name_singular>
+								<name_plural>Voltooid</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="access_statuses" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Publieke toegankelijkheid</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="internal_only" enabled="1" default="1" value="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Niet toegankelijk voor het publiek</name_singular>
+								<name_plural>Niet toegankelijk voor het publiek</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="public_access" enabled="1" default="0" value="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Toegankelijk voor het publiek</name_singular>
+								<name_plural>Toegankelijk voor het publiek</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="restricted_public_access" enabled="1" default="0" value="2">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Beperkt toegankelijk voor het publiek</name_singular>
+								<name_plural>Beperkt toegankelijk voor het publiek</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="Prijs_lijst" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Prijs keuzelijst</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="blank" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>-</name_singular>
+								<name_plural>-</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="aankoopprijs" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Aankoopprijs</name_singular>
+								<name_plural>Aankoopprijs</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="bod" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Bod</name_singular>
+								<name_plural>Bod</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="waarde" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Waarde</name_singular>
+								<name_plural>Waarde</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="verzekeringwaarde" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Verzekeringswaarde</name_singular>
+								<name_plural>Verzekeringswaarde</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="AfmetingKeuze_lijst" hierarchical="0" system="0" vocabulary="0">
+				<labels>
+					<label locale="nl_NL">
+						<name>Keuzelijst afmetingen</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="blank" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>-</name_singular>
+								<name_plural>-</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="dikte" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Dikte</name_singular>
+								<name_plural>Dikte</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="diagonaal" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Diagonaal</name_singular>
+								<name_plural>Diagonaal</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="diagonaalboven" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Diagonaal bovenaan</name_singular>
+								<name_plural>Diagonaal bovenaan</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="diagonaalonder" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Diagonaal onderaan</name_singular>
+								<name_plural>Diagonaal onderaan</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="diameter" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Diameter</name_singular>
+								<name_plural>Diameter</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="Materiaal_lijst" hierarchical="0" system="0" vocabulary="1">
+				<labels>
+					<label locale="nl_NL">
+						<name>Materiaal</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="testmateriaal" enabled="1" default="1" rank="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Test materiaal</name_singular>
+								<name_plural>Test materiaal</name_plural>
+							</label>
+						</labels>
+					</item>
+				<!--Worden automatisch opgeladen?; Zie thesaurus.tags; zoeken op term.type=material-->	
+				</items>
+			</list>
+			<list code="Techniek_lijst" hierarchical="0" system="0" vocabulary="1">
+				<labels>
+					<label locale="nl_NL">
+						<name>Techniek</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="testtechniek" enabled="1" default="1" rank="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Test techniek</name_singular>
+								<name_plural>Test techniek</name_plural>
+							</label>
+						</labels>
+					</item>
+				<!--Worden automatisch opgeladen?; Zie thesaurus.tags; zoeken op term.type=technique-->	
+				</items>
+			</list>	
+			<list code="IconoTrefw_lijst" hierarchical="0" system="0" vocabulary="1">
+				<labels>
+					<label locale="nl_NL">
+						<name>Iconografisch trefwoord</name>
+					</label>
+				</labels>
+				<items>
+				<!--Worden automatisch opgeladen?; Zie thesaurus.tags; zoeken op term.type=motif-->
+				<item idno="testIcono" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>test iconografie</name_singular>
+								<name_plural>test iconografie</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="OpschriftSoortlijst" hierarchical="0" system="0" vocabulary="1">
+				<labels>
+					<label locale="nl_NL">
+						<name>Soort opschrift</name>
+					</label>
+				</labels>
+				<items>
+				<!--Worden nog meegedeeld-->
+				<item idno="testsoort" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>test soort</name_singular>
+								<name_plural>test soort</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="OpschriftMethodelijst" hierarchical="0" system="0" vocabulary="1">
+				<labels>
+					<label locale="nl_NL">
+						<name>Methode opschrift</name>
+					</label>
+				</labels>
+				<items>
+				<!--Worden nog meegedeeld-->
+				<item idno="testmethode" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>test methode</name_singular>
+								<name_plural>test methode</name_plural>
+							</label>
+						</labels>
+					</item>
+				</items>
+			</list>
+			<list code="LeenStatus_lijst" hierarchical="0" system="0" vocabulary="1">
+				<labels>
+					<label locale="nl_NL">
+						<name>Status</name>
+					</label>
+				</labels>
+				<items>
+					<item idno="afgesloten" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Afgesloten</name_singular>
+								<name_plural>Afgesloten</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="ontleend" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Ontleend</name_singular>
+								<name_plural>Ontleend</name_plural>
+							</label>
+						</labels>
+					</item>
+					<item idno="aangevraagd" enabled="1" default="0">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Aangevraagd</name_singular>
+								<name_plural>Aangevraagd</name_plural>
+							</label>
+						</labels>					
+					</item>
+					<item idno="goedgekeurd" enabled="1" default="1">
+						<labels>
+							<label locale="nl_NL" preferred="1">
+								<name_singular>Goedgekeurd</name_singular>
+								<name_plural>Goedgekeurd</name_plural>
+							</label>
+						</labels>					
+					</item>
+				</items>
+			</list>
+	</lists>
+	<elementSets>
+		<metadataElement code="AantalObjectenInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Aantal objecten</name>
+					<description>Aantal objecten of onderdelen</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="AantalObjectenInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Aantal objecten</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="AantalOnderdelen" datatype="List" list="AantalOnderdelen_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Aantal objecten</name>
+									<description>nieuw veld</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="render">select</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="AantalObjecten" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Aantal objecten</name>
+									<description>number_of_parts; part</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">255</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="BeheerCollectie" datatype="List" list="CollectieBeheer_lijst">
+			<labels>
+				<label locale="nl_NL">
+					<name>Collectie in beheer</name>
+					<description>input.source</description>
+				</label>
+			</labels>
+			<settings>
+				<setting name="fieldWidth">40</setting>
+				<setting name="fieldHeight">1</setting>
+				<setting name="render">select</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_collections</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">1</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="ObjectCategorie" datatype="List" list="ObjectCategorie_lijst">
+			<labels>
+				<label locale="nl_NL">
+					<name>Objectcategorie</name>
+					<description>object_category</description>
+				</label>
+			</labels>
+			<settings>
+				<setting name="fieldWidth">100</setting>
+				<setting name="fieldHeight">1</setting>
+				<setting name="requireValue">1</setting>
+				<setting name="render">select</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">1</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="ObjectNaam" datatype="List" list="ObjectNaam_lijst">
+			<labels>
+				<label locale="nl_NL">
+					<name>Objectnaam</name>
+					<description>object_name</description>
+				</label>
+			</labels>
+			<settings>
+				<setting name="fieldWidth">100</setting>
+				<setting name="fieldHeight">1</setting>
+				<setting name="requireValue">1</setting>
+				<setting name="render">horiz_hierbrowser_with_search</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">1</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="AlgemeenNotes" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Algemene opmerkingen</name>
+					<description>nieuw veld</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">2</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="Beschrijving" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Beschrijving</name>
+					<description>description</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">2</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">1</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="VervaardigerrolInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Informatie over de vervaardiger</name>
+					<description>Vervaardiger</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="VervaardigerrolInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Vervaardiger</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="Vervaardiger" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Vervaardiger</name>
+									<description>creator</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">60</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="Vervaardigerrol" datatype="List" list="Vervaardigerrol_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Rol van de vervaardiger</name>
+									<description>creator.role</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="render">select</setting>
+							</settings>
+						</metadataElement>						
+					</elements>
+				</metadataElement>
+				<metadataElement code="VervaardigerrolInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Vervaardiger</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="VervaardigingPlaats" datatype="Place">
+							<labels>
+								<label locale="nl_NL">
+									<name>Plaats van vervaardiging</name>
+									<description>production.place</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="VervaardigingNotes" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking bij vervaardiging</name>
+									<description>production.notes</description>
+								</label>
+							</labels>
+							<settings>
+									<setting name="fieldWidth">60</setting>
+									<setting name="fieldHeight">1</setting>
+									<setting name="minChars">0</setting>
+									<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>	
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>				
+		</metadataElement>							
+		<metadataElement code="VervaardigerDataInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Datum/Periode/Stijl</name>
+					<description>Data bij vervaardiging</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="VervaardigerData_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Datum vervaardiging</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="VervaardigingDatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Datum vervaardiging</name>
+									<description>production.date.end; production.date.end.prec; production.date.start; production.date.start.prec</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="VervaardigingDatumNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking bij datum vervaardiging</name>
+									<description>production.date.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">60</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="VervaardigerData_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Periode en school vervaardiging</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="VervaardigingPeriode" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Periode vervaardiging</name>
+									<description>production.period</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">50</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="VervaardigingSchool" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>School/stijl vervaardiging</name>
+									<description>school_style</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">60</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">1</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="AdlibNummer" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Adlib objectnummer</name>
+					<description>priref</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">90</setting>
+					<setting name="fieldHeight">1</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+				<restriction code="r2">
+					<table>ca_entities</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+				<restriction code="r3">
+					<table>ca_loans</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+				<restriction code="r4">
+					<table>ca_occurrences</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+				<restriction code="r5">
+					<table>ca_movements</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="RecordstatusInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Recordstatus en publieke toegankelijkheid</name>
+					<description>Recordstatus en publieke toegankelijkheid</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="RecordstatusInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Recordstatus en publieke toegankelijkheid</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="RecordStatus" datatype="List" list="workflow_statuses">
+							<labels>
+								<label locale="nl_NL">
+									<name>Recordstatus</name>
+									<description>nieuw veld</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="render">select</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="PubliekToegank" datatype="List" list="access_statuses">
+							<labels>
+								<label locale="nl_NL">
+									<name>Publieke toegankelijkheid</name>
+									<description>nieuw veld</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">1</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>		
+		</metadataElement>
+		<metadataElement code="Notes" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Opmerkingen</name>
+					<description>notes</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">2</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="StandplaatsGeschInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Standplaatsgeschiedenis</name>
+					<description>Geschiedenis van de standplaats</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="StandplaatsGeschInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Data standplaatsgeschiedenis</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="StandplaatsGeschDatVan" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Van</name>
+									<description>location.date.start</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="StandplaatsGeschDatTot" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Tot</name>
+									<description>location.date.end</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="StandplaatsGeschInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Standplaats</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="StandplaatsGeschPlaats" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Standplaats</name>
+									<description>location; location.default</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="StandplaatsGeschInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerkingen</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="StandplaatsGeschNotes" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerkingen</name>
+									<description>location.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">2</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="Eigendomsgeschiedenis" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Eigendomsgeschiedenis</name>
+					<description>owner_hist.acquired_from; owner_hist.owner; current_owner</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">3</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>		
+		<metadataElement code="NummersInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Nummers</name>
+					<description>Nummers</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="NummersInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Soort nummer</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="soortNummer" datatype="List" list="soortNummer_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Soort</name>
+									<description>alternative_number.type</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="render">select</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="NummersNummer" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Nummer</name>
+									<description>alternative_number</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="NummerDatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Datum</name>
+									<description>alternative_number.date</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">20</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="NummersInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Instelling - nummer</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="InstellingNummer" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Instelling</name>
+									<description>alternative_number.institution</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">90</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>		
+		<metadataElement code="GerelateerdObjNote" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Opmerking bij gerelateerd object</name>
+					<description>related_object.notes</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">2</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>	
+		<metadataElement code="VerwervingInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Verwerving</name>
+					<description>Verwerving</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="VerwervingInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Verwervingsmethode</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="VerwervingMethode" datatype="List" list="object_acq_types">
+							<labels>
+								<label locale="nl_NL">
+									<name>Verwervingsmethode</name>
+									<description>acquisition.method</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="VerwervingDatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Datum</name>
+									<description>acquisition.date; acquisition.date.precision; field_coll.date.start</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">20</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="VerwervingPlaats" datatype="Place">
+							<labels>
+								<label locale="nl_NL">
+									<name>Plaats</name>
+									<description>acquisition.place; field_coll.place</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="VerwervingInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Verworven van</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="VerworvenVanKies" datatype="List" list="Verworvenvan_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Verworven van/door/op</name>
+									<description>nieuw veld</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="VerworvenVan" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Verworven</name>
+									<description>acquisition.auction; acquisition.source; field_coll.name</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">80</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="VerwervingInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerkingen</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="VerwervingNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerkingen</name>
+									<description>acquisition.auction.lot_number; acquisition.notes; acquisition.reason; field_coll.event; field_coll.notes; owner_hist.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">2</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>	
+		<metadataElement code="WaardeInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Waarde en verzekering</name>
+					<description>Waarde en verzekering</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="WaardeInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Waarde</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="VerwervingPrijsKeuze" datatype="List" list="Prijs_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Soort prijs</name>
+									<description>nieuw veld</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="VerwervingPrijs" datatype="Currency">
+							<labels>
+								<label locale="nl_NL">
+									<name>Prijs</name>
+									<description>valuation.value; valuation.value.currency; acquisition.price.value; acquisition.price.currency; acquisition.offer_price.value; acquisition.offer_price.currency; insurance.value; insurance.value.currency</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">20</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="VerzekeringDatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Datum</name>
+									<description>insurance.date; insurance.expiry_date; valuation.date</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="WaardeInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerking</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="VerzekeringNotes" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking</name>
+									<description>insurance.notes; acquisition.price.notes; valuation.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">2</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="VerwijderingInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Verwijdering</name>
+					<description>Verwijdering</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="VerwijderingInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Verwijdering</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="VerwijderingMethode" datatype="List" list="verwijderingsmethode_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Verwijderingsmethode</name>
+									<description>disposal.method</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="VerwijderingDatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Datum</name>
+									<description>disposal.date</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="VerwijderingInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Ontvanger</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="VerwijderingOntvanger" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Ontvanger</name>
+									<description>disposal.recipient</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="VerwijderingInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Reden</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="VerwijderingNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Reden</name>
+									<description>disposal.notes; disposal.provisos; disposal.reason</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">2</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="AfmetingInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Afmeting</name>
+					<description>Afmeting</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="AfmetingInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Deel/geheel</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="AfmetingDeel" datatype="List" list="deelgeheel_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Deel/geheel</name>
+									<description>dimension.part</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="AfmetingNaamDeel" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Naam onderdeel</name>
+									<description>dimension.part</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">60</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="AfmetingInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Afmeting</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="AfmetingHoogte" datatype="Length">
+							<labels>
+								<label locale="nl_NL">
+									<name>Hoogte</name>
+									<description>dimension.type; dimension.precision; dimension.unit; dimension.value</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">10</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="AfmetingBreedte" datatype="Length">
+							<labels>
+								<label locale="nl_NL">
+									<name>Breedte</name>
+									<description>dimension.type; dimension.precision; dimension.unit; dimension.value</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">10</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="AfmetingDiepte" datatype="Length">
+							<labels>
+								<label locale="nl_NL">
+									<name>Diepte</name>
+									<description>dimension.type; dimension.precision; dimension.unit; dimension.value</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">10</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="AfmetingKeuze" datatype="List" list="AfmetingKeuze_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Soort afmeting</name>
+									<description>dimension.type; dimension.precision; dimension.unit; dimension.value</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">10</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="AfmetingWaarde" datatype="Length">
+							<labels>
+								<label locale="nl_NL">
+									<name>Waarde</name>
+									<description>dimension.type; dimension.precision; dimension.unit; dimension.value</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">10</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="AfmetingInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Afmeting</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="AfmetingKeuzeDub" datatype="List" list="AfmetingKeuze_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Soort afmeting</name>
+									<description>dimension.type; dimension.precision; dimension.unit; dimension.value</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">10</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="AfmetingWaardeDub" datatype="Length">
+							<labels>
+								<label locale="nl_NL">
+									<name>Waarde</name>
+									<description>dimension.type; dimension.precision; dimension.unit; dimension.value</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">10</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="AfmetingGewicht" datatype="Weight">
+							<labels>
+								<label locale="nl_NL">
+									<name>Gewicht</name>
+									<description>dimension.type; dimension.precision; dimension.unit; dimension.value</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="AfmetingInfo_line4" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerking</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="AfmetingNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking</name>
+									<description>dimension.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">2</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">1</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="MateriaalInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Materiaal</name>
+					<description>Materiaal</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="MateriaalInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Deel/geheel</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="MateriaalDeel" datatype="List" list="deelgeheel_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Deel/geheel</name>
+									<description>material.part; frame</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="MateriaalNaamDeel" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Naam onderdeel</name>
+									<description>material.part; frame</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">60</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="MateriaalInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Materiaal</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="Materiaal" datatype="List" list="Materiaal_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Materiaal</name>
+									<description>material; frame.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="MateriaalInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerking</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="MateriaalNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking</name>
+									<description>material.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">2</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">1</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="TechniekInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Techniek</name>
+					<description>Techniek</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="TechniekInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Deel/geheel</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="TechniekDeel" datatype="List" list="deelgeheel_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Deel/geheel</name>
+									<description>technique.part</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="TechniekNaamDeel" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Naam onderdeel</name>
+									<description>technique.part</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">60</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="TechniekInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Techniek</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="Techniek" datatype="List" list="Techniek_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Techniek</name>
+									<description>technique</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="TechniekInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerking</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="TechniekNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking</name>
+									<description>technique.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">2</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="ToestandInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Toestand en Volledigheid</name>
+					<description>Toestand en Volledigheid</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="ToestandInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Deel/geheel</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="ToestandDeel" datatype="List" list="deelgeheel_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Deel/geheel</name>
+									<description>condition.part</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="ToestandNaamDeel" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Naam onderdeel</name>
+									<description>condition.part</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="ToestandInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Toestand</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="ToestandAlgemeen" datatype="List" list="toestandalgemeen_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Toestand</name>
+									<description>condition</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="ToestandDatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Toestand - Datum</name>
+									<description>condition.date</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="ToestandNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking</name>
+									<description>condition.notes</description>
+								</label>
+							</labels>
+							<settings>
+									<setting name="fieldWidth">40</setting>
+									<setting name="fieldHeight">1</setting>
+									<setting name="minChars">0</setting>
+									<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="ToestandInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Volledigheid</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="Volledigheid" datatype="List" list="volledigheid_lijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Volledigheid</name>
+									<description>completeness</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="VolledigheidDatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Volledigheid - datum</name>
+									<description>completeness.date</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">30</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="VolledigheidNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking</name>
+									<description>preservation_form.notes; completeness.notes</description>
+								</label>
+							</labels>
+							<settings>
+									<setting name="fieldWidth">40</setting>
+									<setting name="fieldHeight">1</setting>
+									<setting name="minChars">0</setting>
+									<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="FysBeschrijving" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Fysieke beschrijving</name>
+					<description>physical_description</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">3</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="digitoolUrlInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Media</name>
+					<description>Media</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="digitoolUrlInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Media</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="digitoolUrl" datatype="DigitoolUrl">
+							<labels>
+								<label locale="nl_NL">
+									<name>Media</name>
+									<description>nieuw veld</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">70</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>	
+					</elements>
+				</metadataElement>
+				<metadataElement code="digitoolUrlInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerking</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="ReproductieNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking</name>
+									<description>reproduction.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">2</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>	
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="ReproductieRef" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Nummer analoge opnames</name>
+					<description>reproduction.reference</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">1</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="IconoTrefwoord" datatype="List" list="IconoTrefw_lijst">
+			<labels>
+				<label locale="nl_NL">
+					<name>Iconografisch trefwoord</name>
+					<description>content.motif.general; content.motif.specific</description>
+				</label>
+			</labels>
+			<settings>
+				<setting name="fieldWidth">90</setting>
+				<setting name="fieldHeight">1</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="BeeldDieren" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Afgebeelde dieren</name>
+					<description>nieuw veld</description>
+				</label>
+			</labels>
+			<settings>
+				<setting name="fieldWidth">90</setting>
+				<setting name="fieldHeight">1</setting>
+				<setting name="suggestExistingValues">1</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>		
+		<metadataElement code="OpschriftInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Opschrift</name>
+					<description>Opschrift</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="OpschriftInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Soort</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="OpschriftSoort" datatype="List" list="OpschriftSoortlijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Soort</name>
+									<description>inscription.type</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="OpschriftMethode" datatype="List" list="OpschriftMethodelijst">
+							<labels>
+								<label locale="nl_NL">
+									<name>Methode</name>
+									<description>inscription.method</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="OpschriftPositie" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Positie</name>
+									<description>inscription.position</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">50</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="OpschriftInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Inhoud</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="OpschriftInhoud" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Inhoud/Beschrijving</name>
+									<description>inscription.content; inscription.description</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">3</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="OpschriftInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Vertaling</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="OpschriftTransliteratie" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Vertaling</name>
+									<description>inscription.transliteration; inscription.translation</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">3</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="OpschriftInfo_line4" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Interpretatie</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="OpschriftInterpretatie" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Interpretatie</name>
+									<description>inscription.interpretation</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">3</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="OpschriftInfo_line5" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerking</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="OpschriftNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking</name>
+									<description>inscription.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">3</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">1</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="EtiketInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Etiketten</name>
+					<description>Etiketten</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="EtiketInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Datum</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="EtiketDatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Datum</name>
+									<description>label.date</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="EtiketInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Inhoud</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="Etiket" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Inhoud</name>
+									<description>label.text</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">3</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="GerelDocumentatieNote_Info" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Documentatie</name>
+					<description>Documentatie</description>
+				</label>
+			</labels>
+			<elements>
+				<metadataElement code="GerelDocumentatieNote_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Documentatie</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="DocumentatieD" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Documentatie</name>
+									<description>Documentatie</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">80</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+								<setting name="usewysiwygeditor">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="Paginering" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Paginering/Nummer</name>
+									<description>Documentatie</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">20</setting>
+								<setting name="fieldHeight">1</setting>
+							</settings>	
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="GerelDocumentatieNote_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerking bij documentatie</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="GerelDocumentatieNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking bij documentatie</name>
+									<description>documentation.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>	
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_objects</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+				<restriction code="r2">
+					<table>ca_occurrences</table>
+					<type>documentation</type>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+				<restriction code="r3">
+					<table>ca_entities</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="NaamNote" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Opmerking bij naam</name>
+					<description>name.note; content.person.note</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">2</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_entities</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="InstellingOmschrijving" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Omschrijving</name>
+					<description>nieuw veld</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">2</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_entities</table>
+					<type>organisation</type>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="GeboorteDataInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Geboortedatum</name>
+					<description>Geboortedatum</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="GeboorteDataInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Geboortedatum</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="Geboortedatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Geboortedatum</name>
+									<description>birth.date.start; birth.date.end; birth.date.precision</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="GeboorteDataInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Geboorteplaats</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="Geboorteplaats" datatype="Place">
+							<labels>
+								<label locale="nl_NL">
+									<name>Geboorteplaats</name>
+									<description>birth.place</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">60</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="GeboorteDataInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerking</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="GeboorteNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerkingen</name>
+									<description>birth.notes</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">2</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_entities</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="SterfDataInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Sterfdatum</name>
+					<description>Sterfdatum</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="SterfDataInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Sterfdatum</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="Sterfdatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Sterfdatum</name>
+									<description>death.date.start; death.date.end; death.date.precision</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="SterfDataInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Sterfplaats</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="Sterfplaats" datatype="Place">
+							<labels>
+								<label locale="nl_NL">
+									<name>Sterfplaats</name>
+									<description>death.place</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">60</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>	
+				<metadataElement code="SterfDataInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerking</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="SterfNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerkingen</name>
+									<description>nieuw veld</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">2</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_entities</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="Biografie" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Biografie</name>
+					<description>biography</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">4</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_entities</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="Beroep" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Beroep</name>
+					<description>occupation</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">1</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+					<setting name="suggestExistingValues">1</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_entities</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>	
+		<metadataElement code="AdresInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Adres</name>
+					<description>Adres</description>
+				</label>
+			</labels>
+			<settings/>
+			<elements>
+				<metadataElement code="AdresInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Straatnaam en nummer</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="AdresStraat" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Straatnaam en nummer</name>
+									<description>address</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="AdresInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Postcode en plaats</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="AdresPostcode" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Postcode</name>
+									<description>address.postal_code</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="AdresPlaats" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Plaats</name>
+									<description>address.place</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">40</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>					
+				</metadataElement>
+				<metadataElement code="AdresInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Land</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="AdresLand" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Land</name>
+									<description>address.country</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>					
+				</metadataElement>
+				<metadataElement code="AdresInfo_line4" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Opmerking</name>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="AdresNote" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Opmerking</name>
+									<description>address.type</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">100</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+							</settings>
+						</metadataElement>
+					</elements>					
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_entities</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>			
+		</metadataElement>
+		<metadataElement code="Telefoonnr" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Telefoonnummer</name>
+					<description>phone</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">1</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_entities</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="Email" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>E-mailadres</name>
+					<description>e-mail</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">1</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_entities</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="Website" datatype="Url">
+			<labels>
+				<label locale="nl_NL">
+					<name>Website</name>
+					<description>url</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">60</setting>
+					<setting name="fieldHeight">1</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_entities</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="LeenStatus" datatype="List" list="LeenStatus_lijst">
+			<labels>
+				<label locale="nl_NL">
+					<name>Status</name>
+					<description>loan_status</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">60</setting>
+					<setting name="fieldHeight">1</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_loans</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="LeenDatumInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Begin- en einddatum</name>
+					<description>Begin- en einddatum</description>
+				</label>
+			</labels>
+			<elements>
+				<metadataElement code="LeenBeginDatum" datatype="DateRange">
+					<labels>
+						<label locale="nl_NL">
+							<name>Begindatum</name>
+							<description>contract.period.start; nieuw veld</description>
+						</label>
+					</labels>
+					<settings>
+						<setting name="fieldWidth">40</setting>
+						<setting name="fieldHeight">1</setting>
+						<setting name="suggestExistingValues">1</setting>
+					</settings>
+				</metadataElement>
+				<metadataElement code="LeenEindDatum" datatype="DateRange">
+					<labels>
+						<label locale="nl_NL">
+							<name>Einddatum</name>
+							<description>nieuw veld</description>
+						</label>
+					</labels>
+					<settings>
+						<setting name="fieldWidth">40</setting>
+						<setting name="fieldHeight">1</setting>
+						<setting name="suggestExistingValues">1</setting>
+					</settings>				
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_loans</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="LeenReden" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Reden</name>
+					<description>nieuw veld</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">2</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_loans</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="LeenNote" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Opmerking</name>
+					<description>nieuw veld</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">2</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_loans</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="MovementDatumInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Begin- en einddatum</name>
+					<description>Begin- en einddatum</description>
+				</label>
+			</labels>
+			<elements>
+				<metadataElement code="MovementBeginDatum" datatype="DateRange">
+					<labels>
+						<label locale="nl_NL">
+							<name>Begindatum</name>
+							<description>entry_date</description>
+						</label>
+					</labels>
+					<settings>
+						<setting name="fieldWidth">40</setting>
+						<setting name="fieldHeight">1</setting>
+						<setting name="suggestExistingValues">1</setting>
+					</settings>
+				</metadataElement>
+				<metadataElement code="MovementEindDatum" datatype="DateRange">
+					<labels>
+						<label locale="nl_NL">
+							<name>Einddatum</name>
+							<description>nieuw veld</description>
+						</label>
+					</labels>
+					<settings>
+						<setting name="fieldWidth">40</setting>
+						<setting name="fieldHeight">1</setting>
+						<setting name="suggestExistingValues">1</setting>
+					</settings>				
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_movements</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="MovementNote" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Opmerking</name>
+					<description>notes</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">2</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_movements</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="TentoonstellingInfo" datatype="Container">
+			<labels>
+				<label locale="nl_NL">
+					<name>Tentoonstellingsgegevens</name>
+					<description>Tentoonstellingsgegevens</description>
+				</label>
+			</labels>
+			<elements>
+				<metadataElement code="TentoonstellingInfo_line1" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Tentoonstellingsdata</name>
+							<description>Tentoonstellingsdata</description>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="TentBeginDatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Begindatum</name>
+									<description>venue.date.start</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">20</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+						<metadataElement code="TentEindDatum" datatype="DateRange">
+							<labels>
+								<label locale="nl_NL">
+									<name>Einddatum</name>
+									<description>venue.date.end</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">20</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>				
+						</metadataElement>
+						<metadataElement code="TentoonstellingPlaats" datatype="Place">
+							<labels>
+								<label locale="nl_NL">
+									<name>Plaats van de tentoonstelling</name>
+									<description>venue.place</description>
+								</label>
+							</labels>
+							<settings>
+									<setting name="fieldWidth">40</setting>
+									<setting name="fieldHeight">1</setting>
+									<setting name="minChars">0</setting>
+									<setting name="maxChars">65535</setting>
+									<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>	
+				</metadataElement>
+				<metadataElement code="TentoonstellingInfo_line2" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Tentoonstellingslocatie</name>
+							<description>venue</description>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="TentoonLocatie" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Tentoonstellingslocatie</name>
+									<description>exhibition.venue</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">90</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+				<metadataElement code="TentoonstellingInfo_line3" datatype="Container">
+					<labels>
+						<label locale="nl_NL">
+							<name>Organisator</name>
+							<description>exhibition.organiser</description>
+						</label>
+					</labels>
+					<settings/>
+					<elements>
+						<metadataElement code="TentoonOrganisator" datatype="Text">
+							<labels>
+								<label locale="nl_NL">
+									<name>Organisator</name>
+									<description>exhibition.venue</description>
+								</label>
+							</labels>
+							<settings>
+								<setting name="fieldWidth">90</setting>
+								<setting name="fieldHeight">1</setting>
+								<setting name="minChars">0</setting>
+								<setting name="maxChars">65535</setting>
+								<setting name="suggestExistingValues">1</setting>
+							</settings>
+						</metadataElement>
+					</elements>
+				</metadataElement>
+			</elements>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_occurrences</table>
+					<type>exhibitions</type>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="collectieBeschrijving" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Algemene beschrijving</name>
+					<description>nieuw veld</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">3</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_collections</table>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="GebeurtDatum" datatype="DateRange">
+			<labels>
+				<label locale="nl_NL">
+					<name>Datum van de gebeurtenis</name>
+					<description>nieuw veld</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">50</setting>
+					<setting name="fieldHeight">1</setting>
+					<setting name="suggestExistingValues">1</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_occurrences</table>
+					<type>events</type>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		<metadataElement code="GebeurtBeschrijving" datatype="Text">
+			<labels>
+				<label locale="nl_NL">
+					<name>Beschrijving van de gebeurtenis</name>
+					<description>nieuw veld</description>
+				</label>
+			</labels>
+			<settings>
+					<setting name="fieldWidth">100</setting>
+					<setting name="fieldHeight">3</setting>
+					<setting name="minChars">0</setting>
+					<setting name="maxChars">65535</setting>
+			</settings>
+			<typeRestrictions>
+				<restriction code="r1">
+					<table>ca_occurrences</table>
+					<type>events</type>
+					<settings>
+						<setting name="minAttributesPerRow">0</setting>
+						<setting name="maxAttributesPerRow">100</setting>
+						<setting name="minimumAttributeBundlesToDisplay">0</setting>
+					</settings>
+				</restriction>
+			</typeRestrictions>
+		</metadataElement>
+		
+	</elementSets>
+	<userInterfaces>
+		<userInterface code="objects_ui" type="ca_objects">
+			<labels>
+				<label locale="nl_NL">
+					<name>Standard object editor</name>
+				</label>
+			</labels>
+			<screens>
+				<screen idno="BasisInformatie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Basisinformatie</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="idno">
+							<bundle>idno</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Objectnummer</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_AantalObjectenInfo">
+							<bundle>ca_attribute_AantalObjectenInfo</bundle>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Eigenaar en beheerder</setting>
+								<setting name="add_label" locale="nl_NL">Voeg eigenaar of beheerder toe</setting>
+								<setting name="restrict_to_relationship_types">beheerderRelatie</setting>
+								<setting name="restrict_to_relationship_types">eigenaarRelatie</setting>
+							</settings>
+						</placement>
+						<placement code="ca_collections">
+							<bundle>ca_collections</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Collectie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg collectie toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_ObjectCategorie">
+							<bundle>ca_attribute_ObjectCategorie</bundle>
+						</placement>
+						<placement code="ca_attribute_ObjectNaam">
+							<bundle>ca_attribute_ObjectNaam</bundle>
+						</placement>
+						<placement code="preferred_labels">
+							<bundle>preferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Titel</setting>
+								<setting name="height" locale="nl_NL">1</setting>
+							</settings>
+						</placement>
+						<placement code="nonpreferred_labels">
+							<bundle>nonpreferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Alternatieve titel</setting>
+								<setting name="add_label" locale="nl_NL">Voeg alternatieve titel toe</setting>
+								<setting name="height" locale="nl_NL">1</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_Beschrijving">
+							<bundle>ca_attribute_Beschrijving</bundle>
+						</placement>
+						<placement code="ca_vervaardiger">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Vervaardiger</setting>
+								<setting name="add_label" locale="nl_NL">Voeg vervaardiger toe</setting>
+								<setting name="restrict_to_relationship_types">VervaardigerRelatie</setting>
+								<setting name="restrict_to_relationship_types">ToegewezenRelatie</setting>
+								<setting name="restrict_to_relationship_types">AtelierRelatie</setting>
+								<setting name="list_format" locale="0">list</setting>
+								<setting name="display_template" locale="0">^ca_entities.preferred_labels (^ca_entities.GeboorteDataInfo.Geboortedatum - ^ca_entities.SterfDataInfo.Sterfdatum)</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_VervaardigerrolInfo">
+							<bundle>ca_attribute_VervaardigerrolInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_VervaardigerDataInfo">
+							<bundle>ca_attribute_VervaardigerDataInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_AlgemeenNotes">
+							<bundle>ca_attribute_AlgemeenNotes</bundle>
+						</placement>
+						<placement code="ca_attribute_AdlibNummer">
+							<bundle>ca_attribute_AdlibNummer</bundle>
+						</placement>
+					</bundlePlacements>
+				</screen>
+				<screen idno="AdministratiefBeheer" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Administratief beheer</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="ca_attribute_RecordStatus">
+							<bundle>ca_attribute_RecordstatusInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_Notes">
+							<bundle>ca_attribute_Notes</bundle>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Contactpersoon</setting>
+								<setting name="add_label" locale="nl_NL">Voeg contactpersoon toe</setting>
+								<setting name="restrict_to_relationship_types">ContactpersoonRelatie</setting>
+								<setting name="restrict_to_types">actindividual</setting>
+							</settings>
+						</placement>
+						<placement code="ca_storage_locations">
+							<bundle>ca_storage_locations</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Standplaats</setting>
+								<setting name="add_label" locale="nl_NL">Voeg standplaats toe</setting>
+								<setting name="list_format" locale="nl_NL">list</setting>
+								<setting name="display_template" locale="nl_NL">^ca_storage_locations.hierarchy.preferred_labels%delimiter=_➔_</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_StandplaatsGeschInfo">
+							<bundle>ca_attribute_StandplaatsGeschInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_Eigendomsgeschiedenis">
+							<bundle>ca_attribute_Eigendomsgeschiedenis</bundle>
+						</placement>
+						<placement code="ca_attribute_NummersInfo">
+							<bundle>ca_attribute_NummersInfo</bundle>
+						</placement>
+						<placement code="ca_nrInstelling">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Nummer - Instelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg instelling toe</setting>
+								<setting name="restrict_to_types">organisation</setting>
+								<setting name="restrict_to_relationship_types">InstellingRelatie</setting>
+							</settings>
+						</placement>
+						<placement code="ca_objects">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerd object</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerd object toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_GerelateerdObjNote">
+							<bundle>ca_attribute_GerelateerdObjNote</bundle>
+						</placement>
+						<placement code="ca_attribute_VerwervingInfo">
+							<bundle>ca_attribute_VerwervingInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_WaardeInfo">
+							<bundle>ca_attribute_WaardeInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_VerwijderingInfo">
+							<bundle>ca_attribute_VerwijderingInfo</bundle>
+						</placement>
+						<placement code="ca_ontvanger">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Ontvanger</setting>
+								<setting name="add_label" locale="nl_NL">Voeg ontvanger toe</setting>
+								<setting name="restrict_to_relationship_types">OntvangerRelatie</setting>
+							</settings>
+						</placement>				
+					</bundlePlacements>
+				</screen>
+				<screen idno="MaterieleGegevens" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Materiële gegevens</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="ca_attribute_AfmetingInfo">
+							<bundle>ca_attribute_AfmetingInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_MateriaalInfo">
+							<bundle>ca_attribute_MateriaalInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_TechniekInfo">
+							<bundle>ca_attribute_TechniekInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_ToestandInfo">
+							<bundle>ca_attribute_ToestandInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_FysBeschrijving">
+							<bundle>ca_attribute_FysBeschrijving</bundle>
+						</placement>										
+					</bundlePlacements>
+				</screen>	
+				<screen idno="Media" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Media</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="ca_attribute_digitoolUrlInfo">
+							<bundle>ca_attribute_digitoolUrlInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_ReproductieRef">
+							<bundle>ca_attribute_ReproductieRef</bundle>
+						</placement>			
+					</bundlePlacements>
+				</screen>
+				<screen idno="InhoudBeschrijving" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Inhoudelijke beschrijving</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="ca_attribute_OpschriftInfo">
+							<bundle>ca_attribute_OpschriftInfo</bundle>
+						</placement>			
+						<placement code="ca_attribute_IconoTrefwoord">
+							<bundle>ca_attribute_IconoTrefwoord</bundle>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Afgebeeld of gerelateerd persoon/familie/instelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg afgebeeld of gerelateerd persoon/familie/instelling toe</setting>
+								<setting name="restrict_to_relationship_types">AfgebeeldPersRelatie</setting>
+								<setting name="restrict_to_relationship_types">GedragendoorRelatie</setting>
+								<setting name="restrict_to_relationship_types">GebruiktdoorRelatie</setting>
+							</settings>
+						</placement>
+						<placement code="ca_afgebeeldobject">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Afgebeeld of gerelateerd object</setting>
+								<setting name="add_label" locale="nl_NL">Voeg afgebeeld of gerelateerd object toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_GerelateerdObjNote">
+							<bundle>ca_attribute_GerelateerdObjNote</bundle>
+						</placement>
+						<placement code="ca_attribute_BeeldDieren">
+							<bundle>ca_attribute_BeeldDieren</bundle>
+						</placement>
+						<placement code="ca_gebeurtenis">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Afgebeelde gebeurtenis</setting>
+								<setting name="add_label" locale="nl_NL">Voeg afgebeelde gebeurtenis toe</setting>
+								<setting name="restrict_to_types">events</setting>
+								<setting name="restrict_to_relationship_types">afgebeeld</setting>
+							</settings>
+						</placement>
+						<placement code="ca_places">
+							<bundle>ca_places</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Afgebeelde plaats</setting>
+								<setting name="add_label" locale="nl_NL">Voeg afgebeelde plaats toe</setting>
+							</settings>
+						</placement>										
+					</bundlePlacements>
+				</screen>	
+				<screen idno="Publiekswerking" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Publiekswerking</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="ca_documentatie">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Documentatie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg documentatie toe</setting>
+								<setting name="restrict_to_relationship_types">catalogusnota</setting>
+								<setting name="restrict_to_relationship_types">vermelding</setting>
+								<setting name="restrict_to_types">documentation</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_GerelDocumentatieNote_Info">
+							<bundle>ca_attribute_GerelDocumentatieNote_Info</bundle>
+						</placement>			
+						<placement code="ca_occurrences">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Tentoonstelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg tentoonstelling toe</setting>
+								<setting name="restrict_to_relationship_types">used</setting>
+								<setting name="restrict_to_types">exhibitions</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_EtiketInfo">
+							<bundle>ca_attribute_EtiketInfo</bundle>
+						</placement>			
+						<placement code="ca_loans">
+							<bundle>ca_loans</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerd bruikleendossier</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerd bruikleendossier toe</setting>
+							</settings>
+						</placement>	
+					</bundlePlacements>
+				</screen>
+				<screen idno="Relaties" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Relaties</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde persoon/instelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde persoon/instelling toe</setting>
+								<setting name="restrict_to_relationship_types">AfgebeeldPersRelatie</setting>
+								<setting name="restrict_to_relationship_types">OntvangerRelatie</setting>
+								<setting name="restrict_to_relationship_types">eigenaarRelatie</setting>
+								<setting name="restrict_to_relationship_types">beheerderRelatie</setting>
+								<setting name="restrict_to_relationship_types">InstellingRelatie</setting>
+								<setting name="restrict_to_relationship_types">AtelierRelatie</setting>
+								<setting name="restrict_to_relationship_types">ToegewezenRelatie</setting>
+								<setting name="restrict_to_relationship_types">VervaardigerRelatie</setting>
+							</settings>
+						</placement>
+						<placement code="ca_objects">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerd of afgebeeld object</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerd of afgebeeld object toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_GerelateerdObjNote">
+							<bundle>ca_attribute_GerelateerdObjNote</bundle>
+						</placement>		
+						<placement code="ca_occurrences">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Documentatie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg documentatie toe</setting>
+								<setting name="restrict_to_relationship_types">related</setting>
+								<setting name="restrict_to_types">documentation</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_GerelDocumentatieNote_Info">
+							<bundle>ca_attribute_GerelDocumentatieNote_Info</bundle>
+						</placement>
+						<placement code="ca_tentoonstelling">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Tentoonstelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg tentoonstelling toe</setting>
+								<setting name="restrict_to_types">exhibitions</setting>
+								<setting name="restrict_to_relationship_types">used</setting>
+							</settings>
+						</placement>
+						<placement code="ca_gebeurtenis">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gebeurtenis</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gebeurtenis toe</setting>
+								<setting name="restrict_to_types">events</setting>
+								<setting name="restrict_to_relationship_types">afgebeeld</setting>
+							</settings>
+						</placement>
+						<placement code="ca_places">
+							<bundle>ca_places</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde plaats</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde plaats toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_storage_locations">
+							<bundle>ca_storage_locations</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Standplaats</setting>
+								<setting name="add_label" locale="nl_NL">Voeg standplaats toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_collections">
+							<bundle>ca_collections</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Collectie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg collectie toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_loans">
+							<bundle>ca_loans</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Bruikleendossier</setting>
+								<setting name="add_label" locale="nl_NL">Voeg bruikleendossier toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_movements">
+							<bundle>ca_movements</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Binnenkomst</setting>
+								<setting name="add_label" locale="nl_NL">Voeg binnenkomst toe</setting>
+							</settings>
+						</placement>
+					</bundlePlacements>
+				</screen>
+			</screens>
+		</userInterface>
+		<userInterface code="entities_ui" type="ca_entities">
+			<labels>
+				<label locale="nl_NL">
+					<name>Standard entities editor</name>
+				</label>
+			</labels>
+			<screens>
+				<screen idno="Identificatie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Identificatie</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r1" type="actindividual">Personen</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="preferred_labels">
+							<bundle>preferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Naam</setting>
+							</settings>
+						</placement>
+						<placement code="nonpreferred_labels">
+							<bundle>nonpreferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Alternatieve naam</setting>
+								<setting name="add_label" locale="nl_NL">Voeg alternatieve naam toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_NaamNote">
+							<bundle>ca_attribute_NaamNote</bundle>
+						</placement>
+						
+						<placement code="ca_attribute_GeboorteDataInfo">
+							<bundle>ca_attribute_GeboorteDataInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_SterfDataInfo">
+							<bundle>ca_attribute_SterfDataInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_AdresInfo">
+							<bundle>ca_attribute_AdresInfo</bundle>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Familie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg familie toe</setting>
+								<setting name="restrict_to_types">family</setting>
+								<setting name="restrict_to_relationship_types">related</setting>
+								<setting name="restrict_to_relationship_types">familie</setting>
+							</settings>
+						</placement>
+						<placement code="ca_instelling">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Instelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg instelling toe</setting>
+								<setting name="restrict_to_types">organisation</setting>
+								<setting name="restrict_to_relationship_types">related</setting>
+								<setting name="restrict_to_relationship_types">contactpersoon</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_AdlibNummer">
+							<bundle>ca_attribute_AdlibNummer</bundle>
+						</placement>
+					</bundlePlacements>
+				</screen>
+				<screen idno="Identificatie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Identificatie</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r1" type="family">Familie</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="preferred_labels">
+							<bundle>preferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Naam</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_NaamNote">
+							<bundle>ca_attribute_NaamNote</bundle>
+						</placement>
+						<placement code="ca_attribute_AdresInfo">
+							<bundle>ca_attribute_AdresInfo</bundle>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Personen</setting>
+								<setting name="add_label" locale="nl_NL">Voeg personen toe</setting>
+								<setting name="restrict_to_types">actindividual</setting>
+								<setting name="restrict_to_relationship_types">related</setting>
+								<setting name="restrict_to_relationship_types">familie</setting>
+							</settings>
+						</placement>
+						<placement code="ca_instelling">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Instelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg instelling toe</setting>
+								<setting name="restrict_to_types">organisation</setting>
+								<setting name="restrict_to_relationship_types">related</setting>
+								<setting name="restrict_to_relationship_types">contactpersoon</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_AdlibNummer">
+							<bundle>ca_attribute_AdlibNummer</bundle>
+						</placement>
+					</bundlePlacements>
+				</screen>
+				<screen idno="Identificatie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Identificatie</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r1" type="organisation">Instellingen</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="preferred_labels">
+							<bundle>preferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Naam</setting>
+							</settings>
+						</placement>
+						<placement code="nonpreferred_labels">
+							<bundle>nonpreferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Alternatieve naam</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_NaamNote">
+							<bundle>ca_attribute_NaamNote</bundle>
+						</placement>
+						<placement code="ca_attribute_AdresInfo">
+							<bundle>ca_attribute_AdresInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_InstellingOmschrijving">
+							<bundle>ca_attribute_InstellingOmschrijving</bundle>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Contactpersoon</setting>
+								<setting name="add_label" locale="nl_NL">Voeg contactpersoon toe</setting>
+								<setting name="restrict_to_types">actindividual</setting>
+								<setting name="restrict_to_relationship_types">contactpersoon</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_AdlibNummer">
+							<bundle>ca_attribute_AdlibNummer</bundle>
+						</placement>
+					</bundlePlacements>
+				</screen>
+				<screen idno="Bio" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Bio</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r1" type="actindividual">Personen</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="ca_attribute_Biografie">
+							<bundle>ca_attribute_Biografie</bundle>
+						</placement>		
+						<placement code="ca_attribute_Beroep">
+							<bundle>ca_attribute_Beroep</bundle>
+						</placement>
+					</bundlePlacements>
+				</screen>
+				<screen idno="Adresinformatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Contactgegevens</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r1" type="actindividual">Personen</restriction>
+						<restriction code="r2" type="family">Familie</restriction>
+						<restriction code="r3" type="organisation">Instellingen</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="ca_attribute_Telefoonnr">
+							<bundle>ca_attribute_Telefoonnr</bundle>
+						</placement>
+						<placement code="ca_attribute_Email">
+							<bundle>ca_attribute_Email</bundle>
+						</placement>		
+						<placement code="ca_attribute_Website">
+							<bundle>ca_attribute_Website</bundle>
+						</placement>
+					</bundlePlacements>
+				</screen>
+				<screen idno="Relaties" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Relaties</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde persoon/familie/instelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde persoon/familie/instelling toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_objects">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerd object</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerd object toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_GerelateerdObjNote">
+							<bundle>ca_attribute_GerelateerdObjNote</bundle>
+						</placement>		
+						<placement code="ca_occurrences">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Documentatie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg documentatie toe</setting>
+								<setting name="restrict_to_types">documentation</setting>
+								<setting name="restrict_to_relationship_types">related</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_GerelDocumentatieNote_Info">
+							<bundle>ca_attribute_GerelDocumentatieNote_Info</bundle>
+						</placement>
+						<placement code="ca_tentoonstelling">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Tentoonstelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg tentoonstelling toe</setting>
+								<setting name="restrict_to_types">exhibitions</setting>
+								<setting name="restrict_to_relationship_types">used</setting>
+							</settings>
+						</placement>
+						<placement code="ca_storage_locations">
+							<bundle>ca_storage_locations</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Standplaats</setting>
+								<setting name="add_label" locale="nl_NL">Voeg standplaats toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_collections">
+							<bundle>ca_collections</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Collectie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg collectie toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_loans">
+							<bundle>ca_loans</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Bruikleen</setting>
+								<setting name="add_label" locale="nl_NL">Voeg bruikleen toe</setting>
+							</settings>
+						</placement>
+					</bundlePlacements>
+				</screen>				
+			</screens>
+		</userInterface>
+		<userInterface code="loan_cataloguers_ui" type="ca_loans">
+			<labels>
+				<label locale="nl_NL">
+					<name>Loan editor</name>
+				</label>
+			</labels>
+			<screens>
+				<screen idno="basicLeenIn" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Basisinformatie</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r1" type="binnenkomendeBruikleen">Binnenkomende bruikleen</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="idno">
+							<bundle>idno</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Bruikleendossier</setting>
+							</settings>
+						</placement>
+						<placement code="ca_objects">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Object</setting>
+								<setting name="add_label" locale="nl_NL">Voeg object toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_LeenStatus">
+							<bundle>ca_attribute_LeenStatus</bundle>
+						</placement>
+						<placement code="ca_attribute_LeenDatumInfo">
+							<bundle>ca_attribute_LeenDatumInfo</bundle>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Bruikleengever</setting>
+								<setting name="add_label" locale="nl_NL">Voeg bruikleengever toe</setting>
+								<setting name="restrict_to_relationship_types">bruikleenGeverRelatie</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_LeenReden">
+							<bundle>ca_attribute_LeenReden</bundle>
+						</placement>
+						<placement code="ca_attribute_LeenNote">
+							<bundle>ca_attribute_LeenNote</bundle>
+						</placement>
+						<placement code="ca_attribute_AdlibNummer">
+							<bundle>ca_attribute_AdlibNummer</bundle>
+						</placement>						
+					</bundlePlacements>
+				</screen>
+				<screen idno="basicLeenUit" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Basisinformatie</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r2" type="uitgaandeBruikleen">Uitgaande bruikleen</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="idno">
+							<bundle>idno</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Bruikleendossier</setting>
+							</settings>
+						</placement>
+						<placement code="ca_objects">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Object</setting>
+								<setting name="add_label" locale="nl_NL">Voeg object toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_LeenStatus">
+							<bundle>ca_attribute_LeenStatus</bundle>
+						</placement>
+						<placement code="ca_attribute_LeenDatumInfo">
+							<bundle>ca_attribute_LeenDatumInfo</bundle>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Bruikleennemer</setting>
+								<setting name="add_label" locale="nl_NL">Voeg bruikleennemer toe</setting>
+								<setting name="restrict_to_relationship_types">bruikleenNemerRelatie</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_LeenReden">
+							<bundle>ca_attribute_LeenReden</bundle>
+						</placement>
+						<placement code="ca_attribute_LeenNote">
+							<bundle>ca_attribute_LeenNote</bundle>
+						</placement>
+						<placement code="ca_attribute_AdlibNummer">
+							<bundle>ca_attribute_AdlibNummer</bundle>
+						</placement>						
+					</bundlePlacements>
+				</screen>
+			</screens>
+		</userInterface>
+		<userInterface code="movement_cataloguers_ui" type="ca_movements">
+			<labels>
+				<label locale="nl_NL">
+					<name>Movement editor</name>
+				</label>
+			</labels>
+			<screens>
+				<screen idno="BasicMovement" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Basisinformatie</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="idno">
+							<bundle>idno</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Transportnummer</setting>
+							</settings>
+						</placement>
+						<placement code="ca_objects">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Object</setting>
+								<setting name="add_label" locale="nl_NL">Voeg object toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_MovementDatumInfo">
+							<bundle>ca_attribute_MovementDatumInfo</bundle>
+						</placement>
+						<placement code="ca_attribute_MovementNote">
+							<bundle>ca_attribute_MovementNote</bundle>
+						</placement>
+						<placement code="ca_attribute_AdlibNummer">
+							<bundle>ca_attribute_AdlibNummer</bundle>
+						</placement>						
+					</bundlePlacements>
+				</screen>
+			</screens>	
+		</userInterface>	
+		<userInterface code="Occurrences_ui" type="ca_occurrences">
+			<labels>
+				<label locale="nl_NL">
+					<name>Occurrences editor</name>
+				</label>
+			</labels>
+			<screens>
+				<screen idno="BasicTentoonstelling" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Basisinformatie</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r1" type="exhibitions">Tentoonstellingen</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="preferred_labels">
+							<bundle>preferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Naam van de tentoonstelling</setting>
+								<setting name="height" locale="nl_NL">1</setting>
+							</settings>
+						</placement>
+						<placement code="nonpreferred_labels">
+							<bundle>nonpreferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Alternatieve naam van de tentoonstelling</setting>
+								<setting name="height" locale="nl_NL">1</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_TentoonstellingInfo">
+							<bundle>ca_attribute_TentoonstellingInfo</bundle>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Organisator</setting>
+								<setting name="add_label" locale="nl_NL">Voeg organisator toe</setting>
+								<setting name="restrict_to_types">organisation</setting>
+								<setting name="restrict_to_relationship_types">OrganisatorRelatie</setting>
+							</settings>
+						</placement>
+						<placement code="ca_locatie">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Locatie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg locatie toe</setting>
+								<setting name="restrict_to_types">organisation</setting>
+								<setting name="restrict_to_relationship_types">LocatieRelatie</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_AdlibNummer">
+							<bundle>ca_attribute_AdlibNummer</bundle>
+						</placement>						
+					</bundlePlacements>
+				</screen>
+				<screen idno="RelatiesTentoonstelling" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Relaties</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r1" type="exhibitions">Tentoonstellingen</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="ca_objects">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde objecten</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde objecten</setting>
+								<setting name="restrict_to_relationship_types">related</setting>
+								<setting name="restrict_to_relationship_types">used</setting>
+							</settings>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde entiteiten</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde entiteiten toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_collections">
+							<bundle>ca_collections</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde collecties</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde collecties toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_occurrences">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Documentatie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg documentatie toe</setting>
+								<setting name="restrict_to_types">documentation</setting>
+								<setting name="restrict_to_relationship_types">related</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_GerelDocumentatieNote_Info">
+							<bundle>ca_attribute_GerelDocumentatieNote_Info</bundle>
+						</placement>
+						<placement code="ca_tentoonstelling">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Tentoonstelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg tentoonstelling toe</setting>
+								<setting name="restrict_to_types">exhibitions</setting>
+								<setting name="restrict_to_relationship_types">used</setting>
+							</settings>
+						</placement>
+					</bundlePlacements>
+				</screen>
+				<screen idno="BasicDocumentatie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Basisinformatie</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r2" type="documentation">Documentatie</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="preferred_labels">
+							<bundle>preferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Documentatie</setting>
+								<setting name="height" locale="nl_NL">1</setting>
+								<setting name="usewysiwygeditor" locale="nl_NL">1</setting>
+							</settings>
+						</placement>			
+						<placement code="ca_attribute_AdlibNummer">
+							<bundle>ca_attribute_AdlibNummer</bundle>
+						</placement>						
+					</bundlePlacements>
+				</screen>
+				<screen idno="RelatiesDocumentatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Relaties</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r2" type="documentation">Documentatie</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="ca_objects">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde objecten</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde objecten</setting>
+							</settings>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde entiteiten</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde entiteiten toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_collections">
+							<bundle>ca_collections</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde collecties</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde collecties toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_occurrences">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Documentatie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg documentatie toe</setting>
+								<setting name="restrict_to_types">documentation</setting>
+								<setting name="restrict_to_relationship_types">related</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_GerelDocumentatieNote_Info">
+							<bundle>ca_attribute_GerelDocumentatieNote_Info</bundle>
+						</placement>
+						<placement code="ca_tentoonstelling">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Tentoonstelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg tentoonstelling toe</setting>
+								<setting name="restrict_to_types">exhibitions</setting>
+								<setting name="restrict_to_relationship_types">used</setting>
+							</settings>
+						</placement>
+					</bundlePlacements>
+				</screen>
+				<screen idno="BasicGebeurtenis" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Basisinformatie</name>
+						</label>
+					</labels>
+					<typeRestrictions>
+						<restriction code="r3" type="events">Gebeurtenis</restriction>
+					</typeRestrictions>
+					<bundlePlacements>
+						<placement code="preferred_labels">
+							<bundle>preferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Naam van de gebeurtenis</setting>
+								<setting name="height" locale="nl_NL">1</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_GebeurtDatum">
+							<bundle>ca_attribute_GebeurtDatum</bundle>
+						</placement>
+						<placement code="ca_attribute_GebeurtBeschrijving">
+							<bundle>ca_attribute_GebeurtBeschrijving</bundle>
+						</placement>								
+					</bundlePlacements>
+				</screen>
+			</screens>	
+		</userInterface>
+		<userInterface code="collectie_ui" type="ca_collections">
+			<labels>
+				<label locale="nl_NL">
+					<name>Collectie editor</name>
+				</label>
+			</labels>
+			<screens>
+				<screen idno="BasicCollectie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Basisinformatie</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="ca_attribute_BeheerCollectie">
+							<bundle>ca_attribute_BeheerCollectie</bundle>
+						</placement>
+						<placement code="preferred_labels">
+							<bundle>preferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Naam</setting>
+								<setting name="height" locale="nl_NL">1</setting>
+							</settings>
+						</placement>
+						<placement code="ca_attribute_collectieBeschrijving">
+							<bundle>ca_attribute_collectieBeschrijving</bundle>
+						</placement>						
+					</bundlePlacements>
+				</screen>
+				<screen idno="RelatiesCollectie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Relaties</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="ca_objects">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde objecten</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde objecten</setting>
+							</settings>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde entiteiten</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde entiteiten toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_occurrences">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde documentatie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde documentatie toe</setting>
+								<setting name="restrict_to_types">documentation</setting>
+							</settings>
+						</placement>
+						<placement code="ca_tentoonstelling">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde tentoonstelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde tentoonstelling toe</setting>
+								<setting name="restrict_to_types">exhibitions</setting>
+							</settings>
+						</placement>
+						<placement code="ca_collections">
+							<bundle>ca_collections</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde collecties</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde collecties toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_storage_locations">
+							<bundle>ca_storage_locations</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Standplaats</setting>
+								<setting name="add_label" locale="nl_NL">Voeg standplaats toe</setting>
+							</settings>
+						</placement>
+					</bundlePlacements>
+				</screen>
+			</screens>	
+		</userInterface>			
+		<userInterface code="storlocations_ui" type="ca_storage_locations">
+			<labels>
+				<label locale="nl_NL">
+					<name>Storage Locations editor</name>
+				</label>
+			</labels>
+			<screens>
+				<screen idno="BasicStorLoc" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Basisinformatie</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="hierarchy_navigation">
+							<bundle>hierarchy_navigation</bundle>
+						</placement>
+						<placement code="preferred_labels">
+								<bundle>preferred_labels</bundle>
+								<settings>
+										<setting name="label" locale="nl_NL">Standplaats</setting>
+										<setting name="add_label" locale="nl_NL">Voeg standplaats toe</setting>
+										<setting name="height" locale="nl_NL">1</setting>
+								</settings>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Bewaarinstelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg bewaarinstelling toe</setting>
+								<setting name="restrict_to_types">organisation</setting>
+							</settings>
+						</placement>	
+					</bundlePlacements>
+				</screen>
+				<screen idno="RelatiesStorLoc" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Relaties</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="ca_objects">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde objecten</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde objecten</setting>
+							</settings>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde entiteiten</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde entiteiten toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_occurrences">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde documentatie</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde documentatie toe</setting>
+								<setting name="restrict_to_types">documentation</setting>
+							</settings>
+						</placement>
+						<placement code="ca_tentoonstelling">
+							<bundle>ca_occurrences</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde tentoonstelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde tentoonstelling toe</setting>
+								<setting name="restrict_to_types">exhibitions</setting>
+							</settings>
+						</placement>
+						<placement code="ca_collections">
+							<bundle>ca_collections</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Gerelateerde collecties</setting>
+								<setting name="add_label" locale="nl_NL">Voeg gerelateerde collecties toe</setting>
+							</settings>
+						</placement>
+					</bundlePlacements>
+				</screen>
+			</screens>	
+		</userInterface>
+		<userInterface code="place_cataloguers_ui" type="ca_places">
+			<labels>
+				<label locale="nl_NL">
+					<name>Place editor</name>
+				</label>
+			</labels>
+			<screens>
+				<screen idno="basic" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<name>Basisinformatie</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="hierarchy_navigation">
+							<bundle>hierarchy_navigation</bundle>
+						</placement>
+						<placement code="preferred_labels">
+							<bundle>preferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Naam</setting>
+								<setting name="add_label" locale="nl_NL">Voeg naam toe</setting>
+							</settings>
+						</placement>
+					</bundlePlacements>
+				</screen>
+				<screen idno="Relaties" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Relaties</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="hierarchy_navigation">
+							<bundle>hierarchy_navigation</bundle>
+						</placement>
+						<placement code="ca_objects">
+							<bundle>ca_objects</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Object</setting>
+								<setting name="add_label" locale="nl_NL">Voeg object toe</setting>
+							</settings>
+						</placement>
+						<placement code="ca_entities">
+							<bundle>ca_entities</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Persoon/familie/instelling</setting>
+								<setting name="add_label" locale="nl_NL">Voeg persoon/familie/instelling toe</setting>
+							</settings>
+						</placement>
+					</bundlePlacements>
+				</screen>
+				<screen idno="location" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Locatie</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="hierarchy_location">
+							<bundle>hierarchy_location</bundle>
+						</placement>
+					</bundlePlacements>
+				</screen>
+				<screen idno="altnames" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<name>Alternatieve namen</name>
+						</label>
+					</labels>
+					<bundlePlacements>
+						<placement code="hierarchy_navigation">
+							<bundle>hierarchy_navigation</bundle>
+						</placement>
+						<placement code="nonpreferred_labels">
+							<bundle>nonpreferred_labels</bundle>
+							<settings>
+								<setting name="label" locale="nl_NL">Alternatieve namen</setting>
+								<setting name="add_label" locale="nl_NL">Voeg alternatieve naam toe</setting>
+							</settings>
+						</placement>
+					</bundlePlacements>
+				</screen>
+			</screens>
+		</userInterface>
+	</userInterfaces>
+	<relationshipTypes>
+		<relationshipTable name="ca_objects_x_entities">
+			<types>
+				<type code="GebruiktdoorRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>gebruikt door</typename>
+							<typename_reverse>heeft gebruikt</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="GedragendoorRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>gedragen door</typename>
+							<typename_reverse>heeft gedragen</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="BewaarinstellingRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>wordt bewaard in</typename>
+							<typename_reverse>is bewaarinstelling van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="VervaardigerRelatie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft vervaardigd</typename>
+							<typename_reverse>is vervaardiger van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="ToegewezenRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>toegeschreven aan</typename>
+							<typename_reverse>werd toegeschreven aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="AtelierRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>komt uit atelier van</typename>
+							<typename_reverse>heeft in atelier</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="ContactpersoonRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft als contactpersoon</typename>
+							<typename_reverse>is contactpersoon voor</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="InstellingRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft nummer in instelling</typename>
+							<typename_reverse>is instelling met nummer</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="beheerderRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft als beheerder</typename>
+							<typename_reverse>is beheerder van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="eigenaarRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft als eigenaar</typename>
+							<typename_reverse>is eigenaar van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="OntvangerRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft als ontvanger</typename>
+							<typename_reverse>is ontvanger van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="AfgebeeldPersRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>beeldt af</typename>
+							<typename_reverse>is afgebeeld</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_objects_x_storage_locations">
+			<types>
+				<type code="StandplaatsRelatie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gelocaliseerd op</typename>
+							<typename_reverse>is locatie van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_objects_x_objects">
+			<types>
+				<type code="ontwerp" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is ontwerp van</typename>
+							<typename_reverse>heeft als ontwerp</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="afgebeeldobject" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>wordt afgebeeld</typename>
+							<typename_reverse>is afgebeeld</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="pendant" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is pendant van</typename>
+							<typename_reverse>heeft als pendant</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="related" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gerelateerd aan</typename>
+							<typename_reverse>is gerelateerd aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="similar" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gelijkaardig aan</typename>
+							<typename_reverse>is gelijkaardig aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="duplicate" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is kopie van</typename>
+							<typename_reverse>is kopie van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="part_of" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is onderdeel van</typename>
+							<typename_reverse>bevat</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_objects_x_collections">
+			<types>
+				<type code="CollectieRelatie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is onderdeel van</typename>
+							<typename_reverse>bevat</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_objects_x_occurrences">
+			<types>
+				<type code="catalogusnota" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft als catalogusnota</typename>
+							<typename_reverse>is catalogusnota van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="vermelding" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>wordt vermeld in</typename>
+							<typename_reverse>vermeldt</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="used" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>bruikleen</typename>
+							<typename_reverse>bruikleen</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="afgebeeld" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is afgebeeld</typename>
+							<typename_reverse>wordt afgebeeld</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_entities_x_entities">
+			<types>
+				<type code="contactpersoon" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is contactpersoon van</typename>
+							<typename_reverse>heeft als contactpersoon</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="related" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gerelateerd aan</typename>
+							<typename_reverse>is gerelateerd aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="familie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>behoort tot familie</typename>
+							<typename_reverse>heeft als familieleden</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>	
+		<relationshipTable name="ca_entities_x_occurrences">
+			<types>
+				<type code="OrganisatorRelatie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is organisator van</typename>
+							<typename_reverse>heeft als organisator</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="LocatieRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is locatie van</typename>
+							<typename_reverse>heeft als locatie</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="related" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gerelateerd aan</typename>
+							<typename_reverse>is gerelateerd aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_loans_x_entities">
+			<types>
+				<type code="bruikleenNemerRelatie" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft als bruikleennemer</typename>
+							<typename_reverse>is bruikleennemer van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="bruikleenGeverRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft als bruikleengever</typename>
+							<typename_reverse>is bruikleengever van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_loans_x_objects">
+			<types>
+				<type code="BruikleenRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft in bruikleen</typename>
+							<typename_reverse>bruikleen aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="loan" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft als onderdeel</typename>
+							<typename_reverse>is onderdeel van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_movements_x_objects">
+			<types>
+				<type code="related" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gerelateerd aan</typename>
+							<typename_reverse>is gerelateerd aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_collections_x_collections">
+			<types>
+				<type code="related" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gerelateerd aan</typename>
+							<typename_reverse>is gerelateerd aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_occurrences_x_occurrences">
+			<types>
+				<type code="related" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gerelateerd aan</typename>
+							<typename_reverse>is gerelateerd aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_places_x_occurrences">
+			<types>
+				<type code="location" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>was locatie van</typename>
+							<typename_reverse>gebeurde in</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_entities_x_collections">
+			<types>
+				<type code="related" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gerelateerd aan</typename>
+							<typename_reverse>is gerelateerd aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="beheerderRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is beheerder van</typename>
+							<typename_reverse>heeft als beheerder</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+				<type code="eigenaarRelatie" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is eigenaar van</typename>
+							<typename_reverse>heeft als eigenaar</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_collections_x_storage_locations">
+			<types>
+				<type code="bewaard" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>heeft als standplaats</typename>
+							<typename_reverse>is standplaats van</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_entities_x_storage_locations">
+			<types>
+				<type code="related" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gerelateerd aan</typename>
+							<typename_reverse>is gerelateerd aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_occurrences_x_storage_locations">
+			<types>
+				<type code="related" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gerelateerd aan</typename>
+							<typename_reverse>is gerelateerd aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_objects_x_places">
+			<types>
+				<type code="depicts" default="0">
+					<labels>
+						<label locale="nl_NL">
+							<typename>beeldt af</typename>
+							<typename_reverse>is afgebeeld door</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+		<relationshipTable name="ca_occurrences_x_collections">
+			<types>
+				<type code="related" default="1">
+					<labels>
+						<label locale="nl_NL">
+							<typename>is gerelateerd aan</typename>
+							<typename_reverse>is gerelateerd aan</typename_reverse>
+						</label>
+					</labels>
+					<subTypeLeft></subTypeLeft>
+					<subTypeRight></subTypeRight>
+				</type>
+			</types>
+		</relationshipTable>
+	</relationshipTypes>
+</profile>
